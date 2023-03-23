@@ -78,11 +78,25 @@ smtp_password = 'your_smtp_password'
 ```
 
 ## Gmailを使ってメールを送信する
+
+### smtpのpasswordを取得する
+```python
+https://x.gd/IXNEe を参照しながら2段階認証をonにする
+
+その後2段階認証の設定画面にもう一度アクセスして、
+一番下にあるアプリパスワードを発行する
+
+発行ご黒で隠しているところをコピーして
+
+
+smtp_password= に貼り付ける
+(passwordは一度しか表示されないので注意)
+
 ```python
 smtp_host = 'smtp.gmail.com'
 smtp_port = 587
-smtp_username = 'your_gmail_address'
-smtp_password = 'your_gmail_password'
+smtp_username = 'your_gmail_address' // ここはgmailの@の前まで
+smtp_password = 'your_gmail_password' // 上のsmtpのpasswordを貼り付け
 ```
 
 ## Xserverを使ってメールを送信する
