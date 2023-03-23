@@ -12,6 +12,8 @@ pip install git+https://github.com/rikuto125/python-send-email.git
 外部のSMTPサーバーの設定
 このライブラリは、外部のSMTPサーバーを利用してメールを送信します。SMTPサーバーの情報を以下のように設定してください。
 SendEmailUseCaseクラスを使ってメールを送信します。以下は、SendEmailUseCaseクラスの使い方の例です。
+
+### main.py
 ```python
 from adapters.smtp_adapter import SmtpAdapter
 
@@ -28,6 +30,7 @@ from usecases.send_email import SendEmailUseCase
 
 send_email_usecase = SendEmailUseCase(smtp_adapter)
 
+#メールの送信先元などを設定
 from_address = 'from@example.com'
 to_address = 'to@example.com'
 subject = 'Test Email'
