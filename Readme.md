@@ -1,13 +1,11 @@
 # Python Send Email Library
 Pythonで書かれたメール送信用ライブラリです。
-外部のSMTPサーバーとの通信や、内部で扱うデータ構造と
-ビジネスロジックを分離することで、拡張性が高く、保守性が高いコードを実現しています。
 
 ## インストール
 このライブラリをインストールするには、pipコマンドを使います。
 
 ```bash
-pip install python-send-email
+pip install git+https://github.com/rikuto125/python-send-email.git
 ```
 
 ## 使い方：メールを送信する
