@@ -90,7 +90,7 @@ https://x.gd/IXNEe を参照しながら2段階認証をonにする
 
 
 smtp_password= に貼り付ける
-(passwordは一度しか表示されないので注意)
+(passwordは一度しか表示されないので注意!!)
 
 ```python
 smtp_host = 'smtp.gmail.com'
