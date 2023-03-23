@@ -13,7 +13,7 @@ class SmtpAdapter:
         self.smtp_password = smtp_password
 
     def send_email(self, email: EmailDTO):
-        msg = MIMEText(email.body)
+        msg = MIMEText(email.body, 'html')
         # メールの作成
         msg['Subject'] = email.subject
         msg['From'] = email.from_address
@@ -22,6 +22,7 @@ class SmtpAdapter:
 
         # メールの送信
         smtp_obj = smtplib.SMTP(self.smtp_host, self.smtp_port)
+        smtp_obj.ehlo()
         smtp_obj.starttls()
         smtp_obj.login(self.smtp_username, self.smtp_password)
         smtp_obj.sendmail(email.from_address, email.to_address, msg.as_string())

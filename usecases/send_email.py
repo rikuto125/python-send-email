@@ -10,5 +10,5 @@ class SendEmailUseCase:
 
     def execute(self, from_address: str, to_address: str, subject: str, body: str):
         email = Email(from_address, to_address, subject, body)
-        email_dto = EmailDTO(email.body, email.from_address, email.subject, email.to_address)
+        email_dto = EmailDTO(email.from_address, email.to_address, email.subject, email.body)
         self.smtp_adapter.send_email(email_dto)
