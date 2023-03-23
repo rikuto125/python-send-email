@@ -13,7 +13,6 @@ class SmtpAdapter:
         self.smtp_password = smtp_password
 
     def send_email(self, email: EmailDTO):
-        print(email)
         msg = MIMEText(email.body)
         # メールの作成
         msg['Subject'] = email.subject
