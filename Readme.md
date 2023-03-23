@@ -15,6 +15,7 @@ SendEmailUseCaseクラスを使ってメールを送信します。以下は、S
 ```python
 from adapters.smtp_adapter import SmtpAdapter
 
+#下の方にある各種メールサーバとサービスの設定を参照
 smtp_host = 'smtp.example.com'
 smtp_port = 587
 smtp_username = 'your_username'
