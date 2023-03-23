@@ -80,17 +80,25 @@ smtp_password = 'your_smtp_password'
 ## Gmailを使ってメールを送信する
 
 ### smtpのpasswordを取得する
-```python
+
 https://x.gd/IXNEe を参照しながら2段階認証をonにする
+
+![Test Image 2](images/2.png)
 
 その後2段階認証の設定画面にもう一度アクセスして、
 一番下にあるアプリパスワードを発行する
+![Test Image 1](images/1.png)
 
-発行ご黒で隠しているところをコピーして
+
+アプリをメールにデバイスはお好きなデバイスを選択して、パスワードを発行する
+![Test Image 3](images/3.png)
+
+発行後黒で隠しているところをコピーする
+(passwordは一度しか表示されないので注意!!)
+![Test Image 4](images/4.png)
 
 
 smtp_password= に貼り付ける
-(passwordは一度しか表示されないので注意!!)
 
 ```python
 smtp_host = 'smtp.gmail.com'
